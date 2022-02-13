@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemeOverlay.MaterialComponents.Toolbar.Primary.FinacexToolbarStyle">
+        <item name="android:background">@color/secondaryColor</item>
+    </style>
+</resources>

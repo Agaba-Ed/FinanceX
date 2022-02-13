@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recieve_button_card"
+android:layout_width="match_parent"
+android:layout_height="56dp"
+android:layout_marginStart="8dp"
+android:layout_marginTop="8dp"
+app:cardCornerRadius="@dimen/card_corner_radius"
+app:cardElevation="@dimen/card_elevation"
+app:layout_constraintEnd_toEndOf="@+id/wallet_card"
+app:layout_constraintHorizontal_bias="1.0"
+app:layout_constraintStart_toEndOf="@id/send_button_card"
+app:layout_constraintTop_toBottomOf="@id/wallet_card" >
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/transaction_icon_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/ic_down"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/transaction_mode_id"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/receive"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/transaction_icon_id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/transaction_time_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22 Jan 2022 5:04pm"
+        app:layout_constraintTop_toBottomOf="@id/transaction_mode_id"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@id/transaction_mode_id"
+        android:textSize="8sp"/>
+    <TextView
+        android:id="@+id/transaction_ug_amount_id"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3500.00 UGX"
+        android:textColor="@color/primaryDarkColor"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/transaction_usd_amount_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="USD 1"
+        app:layout_constraintTop_toBottomOf="@id/transaction_ug_amount_id"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@id/transaction_ug_amount_id"
+        android:textSize="8sp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
